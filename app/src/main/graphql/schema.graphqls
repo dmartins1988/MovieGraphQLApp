@@ -1,0 +1,24 @@
+"""
+Root Query
+"""
+type Query {
+  """
+  List of All Movies
+  """
+  movies: [Movie]
+}
+
+"""
+This represents a movie
+"""
+type Movie {
+  id: Int!
+
+  name: String!
+
+  thumb: String!
+}
+
+schema {
+  query: Query
+}
